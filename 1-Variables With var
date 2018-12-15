@@ -1,0 +1,50 @@
+//3 Ways to create variable in Javascript var, let and const
+
+/*
+Opening Exercise
+let name = prompt('What is your name?');
+document.getElementById('welcome').innerHTML = 'Welcome ' + name + ','  + ' You are the real MVP';
+*/
+
+
+//name for variable and contain letters, numbers or underscores
+//variables cannot start with numbers 
+//variablecan start with underscore
+
+//you can use double or single quotes to wrap value of variable, but it must be consisent
+
+var learning = "JavaScript";//double quotes at each end, you cannot have a single quote on one end and then double quote on the other. Syntax error: vaild or unexpected token
+
+//variables with two or more words
+//note use of camel case
+var firstName = 'John Pablo';//use camel case
+//var first_Name or pascal case FirstName
+
+
+
+var age = 20; //number does need quotes
+var job = true//data type boolean
+var names = ['Astra', 'Rai'];
+
+//you can start a variable without any value
+var learn;
+learn ='coding';
+console.log(learn); // --> undefined
+
+var learningToday = 'JavaScript',
+    name = 'Juan';
+//note above, it's assumed that the keyword to declare the varible is var, same as key word on line 35, note the comma after the string 'JavaScript and not a semicolon'
+
+//a way to create multiple variables
+
+var thisIsOne, thisIsTwo;
+thisIsOne = 1;
+thisIsTwo = 2;
+
+//console.log(thisIsOne); // --> 1
+//console.log(thisIsTwo); // --> 2
+
+var today = 'Saturday';
+var today = 'Monday';
+
+console.log(today);// --> Monday will print, not Saturday, var value can be overridden,this is not considered good practice.
