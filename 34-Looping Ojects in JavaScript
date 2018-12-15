@@ -1,0 +1,32 @@
+//looping objects in JavaScript
+
+let myCar = {
+  model: 'Camero',
+  engine: 6.0,
+  year:1969,
+  make: 'Chevy'
+}
+for(let key in myCar){
+ 
+  //print keys
+  /*
+    model: 'Camero',
+    engine: 6.0,
+    year:1969,
+    make: 'Chevy'
+ 
+  */
+  
+ console.log(`${key} : ${myCar[key]}`); 
+  
+  //print the values of the object
+  //the object name is myCar
+  //the key value, use the string literal '' and then [key] in bracketers
+  //console.log(`${myCar[key]}`);
+  /*output: Camero
+            6
+            1969
+            Chevy 
+ */
+
+}
