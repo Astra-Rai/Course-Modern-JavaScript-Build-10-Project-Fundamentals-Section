@@ -1,0 +1,23 @@
+const months = new Array('January', 'February', 'March', 'April', 'May', 'June');
+
+//print index 1 of array
+//console.log(months[1]);
+
+//change value of array
+//months[1] = 'New Month';
+//console.log(months);
+//find something in array, -1 if what is search for in not found
+//console.log(months.indexOf('January'));
+
+
+//add more items to array
+//will add itmeto  end of array
+//months.push('July');
+
+//add an array tothe first position
+
+
+//add element in middl of array
+months.splice(3, null, 'a mew ,month');
+//months.unshift('Month 0');
+console.log(months);
