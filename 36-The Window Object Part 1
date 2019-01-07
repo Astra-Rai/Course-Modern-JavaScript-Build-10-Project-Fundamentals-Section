@@ -1,0 +1,35 @@
+//window
+
+//console.log is part of window object
+//don't type window, but you can and still will get same result
+//window.console.log("hello");
+//use alert to ensure .js file is linked properly to .html and or .css file
+//window.alert('it works
+//
+//prompt('what is your name?');
+
+//The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button.
+
+
+/*if(confirm('are you sure?')){
+  //if you click okay, deleted is printed to the console 
+  console.log('deleted');
+} else {
+//if you click on cancel, nothin happens prints to console  
+  console.log('nothing happens');
+}
+*/
+
+//retrieve width and height of the window
+
+let height, width;
+//width of entire window
+height = window.outerHeight;
+width = window.outerWidth;
+//width of codepen widow
+//height = window.innerHeight;
+//width = window.innerWidth;
+
+
+console.log(height);
+console.log(width)
