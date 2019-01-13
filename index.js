@@ -1,25 +1,13 @@
-//if operator 
-
-//equal
-//const score = 100;
-//if(score == 100) {
-//  console.log('Yes, is the same');
-//} else {
-//  console.log('No, is not the same');
-//}
+//comparison if else
 
 
-//not equal
-
-const score= 77;
-//if the variable score is not equal to 100....
-//output, yes is different
-if(score !=100) {
-  console.log('Yes, they\'re different');
+//true is a boolean value, therefore if part of if/else statement is true
+const learningJavaScript = true;
+//if condition is true, print...
+if(learningJavaScript) {
+  console.log('great!')
+//if condition is not ture, print...   
 } else {
-  console.log('No, they\'re not different');
+  console.log('So bad. JavaScript is great');  
 
-} 
-  //strictly equal
-  // == checks value only so '100' and 100 read the same
-  //=== checks data type and value, '100' and 100 do not read the same
+}
