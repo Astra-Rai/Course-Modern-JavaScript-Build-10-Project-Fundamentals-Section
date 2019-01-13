@@ -1,32 +1,48 @@
-//switch
+//Switch
 
-//assigning a variable from the switch case
-//create an array, elements three cars
-const cars = ['Camero', 'Mustang', 'Challenger'];
+//How the switch statement works
+/*
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+*/
 
-//use a variable that can change which case you select
-//the case you select represents on of the elments in teh array of cars
 
-const selecter = 1;
-//use this as a placeholder
-//the variable named car will hold the element of the array that is selected by the const selector variable
-let car;
+const paymentMethod = 'check';
 
-switch(selected){
+switch(paymentMethod){
+  
+  case 'cash':
     
-  case 0:
-    //cars[0], camero
-    car = cars[0]; 
-    break;
-  case 1: 
-    //cars[1], mustang
-    car = cars[1];
-    break;
-    //cars[2], challenger
-  case 2:
-    car = cars[2];
-    break;
+    console.log(`You payment method is: ${paymentMethod}`);
+    break;   
+    
+  case 'check':
+    console.log(`You payment method is: ${paymentMethod} we will verify funds...`);
+    
+    break;   
+
+  case 'card':
+    
+    console.log(`You payment method is: ${paymentMethod} procesing...`);
+    break;   
+//The default keyword specifies the code to run if there is no case match: default:
+  
+    console.log('Please select a vaild payment method');
+    break;   
 }
 
-//print the selected car
-console.log('Your selected car is ${car}');
+//break keyword
+/*
+When JavaScript reaches a break keyword, it breaks out of the switch block.
+
+This will stop the execution of more code and case testing inside the block.
+
+When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+
+
+
+
+
+
+*/
