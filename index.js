@@ -1,48 +1,25 @@
-//Switch
+//if operator 
 
-//How the switch statement works
-/*
-The switch expression is evaluated once.
-The value of the expression is compared with the values of each case.
-If there is a match, the associated block of code is executed.
-*/
-
-
-const paymentMethod = 'check';
-
-switch(paymentMethod){
-  
-  case 'cash':
-    
-    console.log(`You payment method is: ${paymentMethod}`);
-    break;   
-    
-  case 'check':
-    console.log(`You payment method is: ${paymentMethod} we will verify funds...`);
-    
-    break;   
-
-  case 'card':
-    
-    console.log(`You payment method is: ${paymentMethod} procesing...`);
-    break;   
-//The default keyword specifies the code to run if there is no case match: default:
-  
-    console.log('Please select a vaild payment method');
-    break;   
-}
-
-//break keyword
-/*
-When JavaScript reaches a break keyword, it breaks out of the switch block.
-
-This will stop the execution of more code and case testing inside the block.
-
-When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+//equal
+//const score = 100;
+//if(score == 100) {
+//  console.log('Yes, is the same');
+//} else {
+//  console.log('No, is not the same');
+//}
 
 
+//not equal
 
+const score= 77;
+//if the variable score is not equal to 100....
+//output, yes is different
+if(score !=100) {
+  console.log('Yes, they\'re different');
+} else {
+  console.log('No, they\'re not different');
 
-
-
-*/
+} 
+  //strictly equal
+  // == checks value only so '100' and 100 read the same
+  //=== checks data type and value, '100' and 100 do not read the same
